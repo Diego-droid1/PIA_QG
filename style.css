@@ -1,12 +1,13 @@
 /* --------------------- */
-/* Base y Reseteo       */
+/* Reseteo general       */
 /* --------------------- */
 * {
     box-sizing: border-box;
-}
-html, body {
     margin: 0;
     padding: 0;
+}
+
+html, body {
     width: 100%;
     overflow-x: hidden;
     font-family: 'Segoe UI', sans-serif;
@@ -19,7 +20,7 @@ html, body {
 /* Encabezado            */
 /* --------------------- */
 header {
-    background-color: #3a7734; /* Verde intenso */
+    background-color: #3a7734;
     color: white;
     padding: 30px 0;
     text-align: center;
@@ -42,6 +43,7 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
+    max-width: 100%;
 }
 nav a {
     color: white;
@@ -61,14 +63,21 @@ nav a:hover {
 /* --------------------- */
 main {
     padding: 20px;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 section {
     margin-bottom: 30px;
-    background-color: #e8f6e9; /* Verde suave */
+    background-color: #e8f6e9;
     padding: 20px;
     border-left: 5px solid #6abf69;
     border-radius: 6px;
+    max-width: 100%;
 }
+
+/* --------------------- */
+/* Títulos de sección    */
+/* --------------------- */
 section h2 {
     color: #3a7734;
 }
@@ -90,6 +99,7 @@ footer {
     color: #2e4e2e;
     padding: 15px;
     font-size: 0.9em;
+    max-width: 100%;
 }
 
 /* --------------------- */
@@ -130,7 +140,6 @@ footer {
     nav a {
         width: 100%;
         text-align: center;
-        box-sizing: border-box;
     }
 
     main {
@@ -141,7 +150,6 @@ footer {
         padding: 15px;
         margin-left: auto;
         margin-right: auto;
-        max-width: 100%;
     }
 
     #btnTop {
