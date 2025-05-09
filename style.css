@@ -1,27 +1,41 @@
-/* Fuente base y fondo */
-body {
+/* --------------------- */
+/* Base y Reseteo       */
+/* --------------------- */
+* {
+    box-sizing: border-box;
+}
+html, body {
     margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
     font-family: 'Segoe UI', sans-serif;
     line-height: 1.6;
     background-color: #f0fdf4; /* Verde muy claro */
     color: #2e4e2e;
 }
 
-/* Encabezado */
+/* --------------------- */
+/* Encabezado            */
+/* --------------------- */
 header {
     background-color: #3a7734; /* Verde intenso */
     color: white;
     padding: 30px 0;
     text-align: center;
 }
-
 header h1 {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     font-size: 2.5em;
 }
+header p {
+    margin: 10px 0 0;
+}
 
-/* Navegación */
+/* --------------------- */
+/* Navegación            */
+/* --------------------- */
 nav {
     margin-top: 10px;
     display: flex;
@@ -29,7 +43,6 @@ nav {
     flex-wrap: wrap;
     gap: 15px;
 }
-
 nav a {
     color: white;
     text-decoration: none;
@@ -39,16 +52,16 @@ nav a {
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color 0.3s ease;
 }
-
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* Contenido principal */
+/* --------------------- */
+/* Contenido principal   */
+/* --------------------- */
 main {
     padding: 20px;
 }
-
 section {
     margin-bottom: 30px;
     background-color: #e8f6e9; /* Verde suave */
@@ -56,19 +69,21 @@ section {
     border-left: 5px solid #6abf69;
     border-radius: 6px;
 }
-
-/* Títulos de secciones */
 section h2 {
     color: #3a7734;
 }
 
-/* Listas */
+/* --------------------- */
+/* Listas                */
+/* --------------------- */
 ul {
     list-style-type: disc;
     padding-left: 20px;
 }
 
-/* Pie de página */
+/* --------------------- */
+/* Pie de página         */
+/* --------------------- */
 footer {
     text-align: center;
     background-color: #cfe9cf;
@@ -77,6 +92,9 @@ footer {
     font-size: 0.9em;
 }
 
+/* --------------------- */
+/* Botón "Ir arriba"     */
+/* --------------------- */
 #btnTop {
     position: fixed;
     bottom: clamp(20px, 4vw, 40px);
@@ -94,22 +112,25 @@ footer {
     pointer-events: none;
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
-
 #btnTop.show {
     opacity: 1;
     pointer-events: auto;
 }
 
-/* Responsive para móviles */
+/* --------------------- */
+/* Responsive móviles    */
+/* --------------------- */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
         align-items: center;
+        padding: 0 10px;
     }
 
     nav a {
         width: 100%;
         text-align: center;
+        box-sizing: border-box;
     }
 
     main {
@@ -118,5 +139,15 @@ footer {
 
     section {
         padding: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+    }
+
+    #btnTop {
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 14px;
+        font-size: 18px;
     }
 }
