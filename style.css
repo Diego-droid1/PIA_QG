@@ -79,8 +79,8 @@ footer {
 
 #btnTop {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: clamp(20px, 4vw, 40px);
+    right: clamp(20px, 4vw, 40px);
     z-index: 9999;
     background-color: #4CAF50;
     color: white;
@@ -94,8 +94,6 @@ footer {
     pointer-events: none;
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
-
-#btnTop { opacity: 1 !important; pointer-events: auto !important; }
 
 #btnTop.show {
     opacity: 1;
