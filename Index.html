@@ -1,76 +1,215 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>BioPint - Proyecto de Emprendimiento</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Flexi-Dig es una innovadora prótesis modular de dedo que mejora la calidad de vida gracias a su apariencia realista, comodidad y tecnología de impresión 3D.">
+    <meta name="keywords"
+        content="prótesis de dedo, prótesis modular, tecnología médica, impresión 3D, ergonomía, salud, accesibilidad">
+    <meta name="author" content="Flexi-Dig">
+
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Flexi-Dig | Prótesis Modular de Dedo para una Vida Plena</title>
+
+    <!-- Fuentes y Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+
 </head>
+
 <body>
-    <header>
-        <h1>BioPint</h1>
-        <p>Una alternativa ecológica para pintar el futuro</p>
-        <nav>
-            <a href="#presentacion">Presentación</a>
-            <a href="#problema">Problema</a>
-            <a href="#solucion">Solución</a>
-            <a href="#ventajas">Ventajas</a>
-            <a href="#ecologia">Ecología</a>
-        </nav>
+
+    <!-- Encabezado Principal -->
+    <header id="header" role="banner">
+        <div class="container header-container">
+            <a href="#hero" class="logo" aria-label="Inicio Flexi-Dig">
+                <img src="assets/logo.png" alt="Logo de Flexi-Dig">
+            </a>
+
+            <!-- Menú de tres puntos (visible solo en móviles) -->
+            <div class="more-options">
+                <button id="moreOptionsBtn" class="more-options-btn">
+                    <i class="bi bi-three-dots"></i> <!-- Ícono de tres puntos -->
+                </button>
+
+                <!-- Opciones ocultas (solo en móvil) -->
+                <div id="moreOptionsMenu" class="more-options-menu">
+                    <a href="/terminos-y-condiciones" class="more-option">Términos y Condiciones</a>
+                    <a href="/aviso-de-privacidad" class="more-option">Aviso de Privacidad</a>
+                </div>
+            </div>
+
+            <nav role="navigation" aria-label="Menú principal">
+                <ul class="nav-list">
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#como-usar">Cómo Usar</a></li>
+                    <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#ods">ODS</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="presentacion">
-            <h2>Presentación del Emprendimiento</h2>
-            <p><strong>BioPint</strong> es un proyecto de emprendimiento cuyo objetivo es ofrecer pinturas ecológicas, sostenibles y saludables para las personas y el medio ambiente. Este producto está diseñado para cubrir una necesidad creciente: decorar y proteger espacios sin contaminar.</p>
-        </section>
+    <!-- Sección Hero -->
+    <section id="hero" class="hero" role="region" aria-label="Introducción">
+        <div class="container hero-content">
+            <h1>Flexi-Dig: Prótesis Modular de Dedo</h1>
+            <p>Solución funcional, estética y adaptable para quienes buscan mejorar su calidad de vida.</p>
+            <a href="#como-usar" class="cta-button">Descubre Cómo Usarlo</a>
+        </div>
+    </section>
 
-        <section id="problema">
-            <h2>Problema Detectado</h2>
-            <p>Muchas pinturas convencionales contienen compuestos químicos tóxicos que afectan la salud y contaminan el aire, tanto en interiores como en el medio ambiente. Además, su fabricación suele generar residuos nocivos para la naturaleza.</p>
-        </section>
+    <!-- Sección de Beneficios -->
+    <section id="beneficios" class="section" aria-labelledby="beneficios-title">
+        <div class="container">
+            <h2 id="beneficios-title">Beneficios Destacados</h2>
+            <div class="beneficios-container">
+                <article class="beneficio">
+                    <i class="fas fa-check-circle" aria-hidden="true"></i>
+                    <h3>Apariencia Realista</h3>
+                    <p>Diseño discreto y personalizado según tus necesidades estéticas.</p>
+                </article>
+                <article class="beneficio">
+                    <i class="fas fa-cogs" aria-hidden="true"></i>
+                    <h3>Fácil de Usar y Retirar</h3>
+                    <p>Ergonomía pensada para comodidad y funcionalidad diaria.</p>
+                </article>
+                <article class="beneficio">
+                    <i class="fas fa-hand-holding" aria-hidden="true"></i>
+                    <h3>Uso Diario Compatible</h3>
+                    <p>Permite realizar tareas cotidianas como escribir o manipular objetos.</p>
+                </article>
+            </div>
+        </div>
+    </section>
 
-        <section id="solucion">
-            <h2>Solución Propuesta</h2>
-            <p>Nuestro emprendimiento propone el uso de pinturas ecológicas elaboradas con ingredientes naturales, sin VOCs (compuestos orgánicos volátiles), y empaques reciclables. Estas pinturas ofrecen calidad, durabilidad y un impacto ambiental casi nulo.</p>
-        </section>
+    <!-- Sección Cómo Usarlo -->
+    <section id="como-usar" class="section" aria-labelledby="como-usar-title">
+        <div class="container">
+            <h2 id="como-usar-title">¿Cómo Usarlo?</h2>
+            <ol class="steps-container">
+                <li class="step">
+                    <h3>1. Colocación</h3>
+                    <p>Ubica la prótesis sobre el muñón o la zona a reemplazar.</p>
+                </li>
+                <li class="step">
+                    <h3>2. Ajuste</h3>
+                    <p>Se adapta sin cirugía, brindando estabilidad y confort.</p>
+                </li>
+                <li class="step">
+                    <h3>3. Usabilidad</h3>
+                    <p>Úsala con naturalidad para tus actividades cotidianas.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
 
-        <section id="ventajas">
-            <h2>Ventajas Competitivas</h2>
-            <ul>
-                <li>Productos no tóxicos y seguros para niños y mascotas.</li>
-                <li>Materias primas biodegradables.</li>
-                <li>Contribuyen a la calidad del aire en interiores.</li>
-                <li>Fabricación local y sostenible.</li>
-                <li>Compromiso con la educación ambiental.</li>
-            </ul>
-        </section>
+    <!-- Sección Características -->
+    <section id="caracteristicas" class="section" aria-labelledby="caracteristicas-title">
+        <div class="container">
+            <h2 id="caracteristicas-title">Características del Producto</h2>
+            <div class="caracteristicas-container">
+                <article class="caracteristica">
+                    <h3>Materiales de Alta Calidad</h3>
+                    <p>Fabricada con nylon reforzado, PLA y TPU, garantizando flexibilidad y durabilidad.</p>
+                </article>
+                <article class="caracteristica">
+                    <h3>Impresión 3D</h3>
+                    <p>Personalización precisa para adaptarse a cada usuario.</p>
+                </article>
+                <article class="caracteristica">
+                    <h3>Diseño Modular</h3>
+                    <p>Conectores magnéticos y estructura telescópica para máxima funcionalidad.</p>
+                </article>
+            </div>
 
-        <section id="ecologia">
-            <h2>Responsabilidad Ecológica</h2>
-            <p>En <strong>BioPint</strong>, estamos comprometidos con prácticas responsables: utilizamos envases reciclables y fomentamos el reciclaje.</p>
-        </section>
-    </main>
+            <div id="extra-content" class="extra-content hidden">
+                <article class="caracteristica">
+                    <h3>Adaptabilidad Ergonométrica</h3>
+                    <p>Diseñada para integrarse con tu cuerpo, permitiendo un uso prolongado y cómodo.</p>
+                </article>
+                <article class="caracteristica">
+                    <h3>Fácil Mantenimiento</h3>
+                    <p>Componentes lavables y resistentes para una larga vida útil.</p>
+                </article>
+            </div>
 
-    <footer>
-        <p>&copy; 2025 BioPint. Proyecto de emprendimiento.</p>
+            <div class="features-buttons">
+                <button id="show-more" class="show-more-btn" aria-expanded="false">Ver más</button>
+                <button id="toggle-mode" class="mode-toggle" aria-label="Cambiar modo oscuro/claro">🌙 / 🌞</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de ODS -->
+    <section id="ods" class="section" aria-labelledby="ods-title">
+        <div class="container">
+            <h2 id="ods-title">Contribución a los ODS</h2>
+            <div class="ods-container">
+                <article class="ods-item">
+                    <i class="fas fa-heartbeat" aria-hidden="true"></i>
+                    <h3>ODS 3: Salud y Bienestar</h3>
+                </article>
+                <article class="ods-item">
+                    <i class="fas fa-industry" aria-hidden="true"></i>
+                    <h3>ODS 9: Innovación e Infraestructura</h3>
+                </article>
+                <article class="ods-item">
+                    <i class="fas fa-users" aria-hidden="true"></i>
+                    <h3>ODS 10: Reducción de Desigualdades</h3>
+                </article>
+                <article class="ods-item">
+                    <i class="fas fa-briefcase" aria-hidden="true"></i>
+                    <h3>ODS 8: Trabajo Decente y Crecimiento</h3>
+                </article>
+                <article class="ods-item">
+                    <i class="fas fa-recycle" aria-hidden="true"></i>
+                    <h3>ODS 12: Producción Responsable</h3>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <a href="#header" id="scrollToTopBtn" class="scroll-to-top-btn" aria-label="Volver arriba">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <!-- Pie de Página -->
+    <footer role="contentinfo">
+        <div class="container footer-container">
+            <p>&copy; 2025 Flexi-Dig | Todos los derechos reservados</p>
+            <div class="social-links" aria-label="Redes sociales">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <nav>
+                <!-- Menú principal de pie de página -->
+                <ul>
+                    <li><a href="#" id="open-terms">Términos y Condiciones</a></li>
+                    <li><a href="#" id="open-privacy">Aviso de Privacidad</a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 
-<button id="btnTop" onclick="scrollToTop()">↑</button>
-<script>
-    const btnTop = document.getElementById('btnTop');
+    <div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-content" role="document">
+            <button class="modal-close" aria-label="Cerrar modal">&times;</button>
+            <div id="modal-body" class="modal-body">
 
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-            btnTop.classList.add('show');
-        } else {
-            btnTop.classList.remove('show');
-        }
-    });
+            </div>
+        </div>
 
-    function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-</script>
+        <!-- Scripts -->
+        <script src="js/script.js" defer></script>
 </body>
+
 </html>
